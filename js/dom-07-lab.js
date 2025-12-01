@@ -1,3 +1,3 @@
-import { createComponent as createInputListComponent } from './input-list-component.js';
+import createSectionListComponent from './section-list-component.js';
 
-createInputListComponent(document.querySelector('body'));
+createSectionListComponent(document.querySelector('body'));

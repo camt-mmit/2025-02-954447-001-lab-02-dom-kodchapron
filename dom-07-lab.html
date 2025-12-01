@@ -17,87 +17,28 @@
     <title>DOM-07: Lab</title>
   </head>
   <body>
-    <header>
-        <button
-          type="button"
-          class="app-cl-btn app-cl-primary app-cmd-add-section"
-        >
-          <i class="material-symbols-outlined">post_add</i>
-          Add Section
-        </button>
-    </header>
-    <article class="app-cmp-section">
-      <header>
-        <button
-          type="button"
-          class="app-cl-btn app-cl-primary app-cmd-add-number-input"
-        >
-          <i class="material-symbols-outlined">add</i>
-          Add
-        </button>
-      </header>
-      <div class="app-cl-column-container">
-        <section class="app-cmp-number-list">
-          <template class="app-tmp-number-component">
-            <div class="app-cmp-number">
-              <label>
-                <b>Number<span class="app-title-number"></span></b>
-                <input type="number" class="app-inp-number" value="0" />
-              </label>
-              <button
-                type="button"
-                class="app-cl-btn app-cl-warn app-cl-icon app-cmd-remove-number-input"
-              >
-                <i class="material-symbols-outlined">delete_forever</i>
-              </button>
-            </div>
-          </template>
-        </section>
-        <section>
-          <div class="app-cmp-number">
-            <label>
-              <b>Result</b>
-              <output
-                class="app-cl-number app-out-number"
-                style="padding-right: calc(5ch + 3px)"
-                >0</output
-              >
-            </label>
-          </div>
-        </section>
-      </div>
-    </article>
-  </body>
-</html>
-
-
-<body>
-  <!-- ปุ่มเพิ่ม Section -->
-  <header style="padding: 1rem;">
     <button type="button" class="app-cl-btn app-cl-primary app-cmd-add-section">
-      <i class="material-symbols-outlined">add</i>
-      Add Section
+        <i class="material-symbols-outlined">post_add</i>
+        Section
     </button>
-  </header>
-
-  <!-- Container สำหรับเก็บ sections -->
-  <div class="app-sections-container">
-    
-    <!-- Template สำหรับ Section -->
-    <template class="app-tmp-section">
+    <template class="app-cmp-section-list">
       <article class="app-cmp-section">
         <header>
-          <h3>Section <span class="app-section-number"></span></h3>
-          <div>
-            <button type="button" class="app-cl-btn app-cl-primary app-cmd-add-number-input">
-              <i class="material-symbols-outlined">add</i>
-              Add Input
-            </button>
-            <button type="button" class="app-cl-btn app-cl-warn app-cmd-remove-section">
-              <i class="material-symbols-outlined">delete</i>
-              Remove Section
-            </button>
-          </div>
+          <button
+            type="button"
+            class="app-cl-btn app-cl-primary app-cmd-add-number-input"
+          >
+            <i class="material-symbols-outlined">add</i>
+            Add
+          </button>
+          xxxxx
+          <button
+            type="button"
+            class="app-cl-btn app-cl-warn app-cmd-remove-section"
+          >
+            <i class="material-symbols-outlined">delete</i>
+            Section
+          </button>
         </header>
         <div class="app-cl-column-container">
           <section class="app-cmp-number-list">
@@ -107,7 +48,10 @@
                   <b>Number<span class="app-title-number"></span></b>
                   <input type="number" class="app-inp-number" value="0" />
                 </label>
-                <button type="button" class="app-cl-btn app-cl-warn app-cl-icon app-cmd-remove-number-input">
+                <button
+                  type="button"
+                  class="app-cl-btn app-cl-warn app-cl-icon app-cmd-remove-number-input"
+                >
                   <i class="material-symbols-outlined">delete_forever</i>
                 </button>
               </div>
@@ -117,13 +61,16 @@
             <div class="app-cmp-number">
               <label>
                 <b>Result</b>
-                <output class="app-cl-number app-out-number" style="padding-right: calc(5ch + 3px)">0</output>
+                <output
+                  class="app-cl-number app-out-number"
+                  style="padding-right: calc(5ch + 3px)"
+                  >0</output
+                >
               </label>
             </div>
           </section>
         </div>
       </article>
     </template>
-
-  </div>
-</body>
+  </body>
+</html>
