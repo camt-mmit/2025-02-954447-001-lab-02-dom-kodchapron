@@ -111,17 +111,69 @@ input[type='number'],
   }
 }
 
+/* ⭐ ปุ่ม Add Section ด้านบน (ตามรูป) */
+body > .app-cmd-add-section {
+  display: block;
+  margin: 1rem auto;
+  background: #e8eaf6;
+  border: 2px solid #5c6bc0;
+  border-radius: 8px;
+  color: #5c6bc0;
+}
+
+/* ⭐ Container สำหรับ sections */
+.app-section-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ⭐ แต่ละ Section (ตามรูป) */
 .app-cmp-section {
   display: flex;
   flex-direction: column;
 
-  width: min(320px, 100%);
+  width: 100%;
 
-  margin-left: auto;
-  margin-right: auto;
+  /* ⭐ เส้นบน */
+  border-top: 2px solid #333;
+  padding-top: 1rem;
 
   & > header {
-    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+    /* ⭐ Section title ตรงกลาง */
+    & > span {
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #000;
+    }
+
+    /* ⭐ ปุ่ม Add Input */
+    & > .app-cmd-add-number-input {
+      background: #e3f2fd;
+      border: 2px solid #42a5f5;
+      border-radius: 6px;
+      color: #1976d2;
+    }
+
+    /* ⭐ ปุ่ม Remove Section */
+    & > .app-cmd-remove-section {
+      background: #ffebee;
+      border: 2px solid #ef5350;
+      border-radius: 6px;
+      color: #c62828;
+      padding: 0.5em;
+    }
   }
 
   .app-cmp-number-list {
